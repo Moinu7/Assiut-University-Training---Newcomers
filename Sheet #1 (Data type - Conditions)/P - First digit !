@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main() {
+    int x;
+    std::cin >> x;
+
+    int firstDigit = x / 1000; // Get the first digit
+
+    if (firstDigit % 2 == 0) {
+        std::cout << "EVEN" << std::endl;
+    } else {
+        std::cout << "ODD" << std::endl;
+    }
+
+    return 0;
+}
