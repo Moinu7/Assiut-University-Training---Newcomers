@@ -1,0 +1,13 @@
+#include <iostream>
+
+int main() {
+    char x;
+    std::cin >> x;
+
+    if (x >= 'a' && x <= 'z') {
+        std::cout << (char)(x - 32) << std::endl;
+    } else {
+        std::cout << (char)(x + 32) << std::endl;
+    }
+    return 0;
+}
