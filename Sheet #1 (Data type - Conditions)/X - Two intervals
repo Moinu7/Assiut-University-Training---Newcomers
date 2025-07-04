@@ -1,0 +1,18 @@
+#include <iostream>
+#include <algorithm>
+
+int main() {
+    int l1, r1, l2, r2;
+    std::cin >> l1 >> r1 >> l2 >> r2;
+
+    int start = std::max(l1, l2);
+    int end = std::min(r1, r2);
+
+    if (start <= end) {
+        std::cout << start << " " << end << std::endl;
+    } else {
+        std::cout << -1 << std::endl;
+    }
+
+    return 0;
+}
