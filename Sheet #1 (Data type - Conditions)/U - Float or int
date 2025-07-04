@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+
+int main() {
+    std::string input;
+    std::getline(std::cin, input);
+
+    std::stringstream ss(input);
+    double num;
+    ss >> num;
+
+    if (num == static_cast<int>(num)) {
+        std::cout << "int " << static_cast<int>(num) << std::endl;
+    } else {
+        int integerPart = static_cast<int>(num);
+        double decimalPart = num - integerPart;
+        std::cout << "float " << integerPart << " " << decimalPart << std::endl;
+    }
+
+    return 0;
+}
