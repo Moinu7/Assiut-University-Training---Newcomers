@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+    char x;
+    std::cin >> x;
+
+    if (x >= '0' && x <= '9') {
+        std::cout << "IS DIGIT" << std::endl;
+    } else {
+        std::cout << "ALPHA" << std::endl;
+        if (x >= 'A' && x <= 'Z') {
+            std::cout << "IS CAPITAL" << std::endl;
+        } else if (x >= 'a' && x <= 'z') {
+            std::cout << "IS SMALL" << std::endl;
+        }
+    }
+
+    return 0;
+}
