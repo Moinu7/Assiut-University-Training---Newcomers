@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string first1, second1, first2, second2;
+    std::cin >> first1 >> second1;
+    std::cin >> first2 >> second2;
+
+    if (second1 == second2) {
+        std::cout << "ARE Brothers" << std::endl;
+    } else {
+        std::cout << "NOT" << std::endl;
+    }
+
+    return 0;
+}
