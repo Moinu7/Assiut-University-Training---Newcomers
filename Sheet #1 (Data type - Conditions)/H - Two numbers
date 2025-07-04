@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+    double a, b;
+    cin >> a >> b;
+
+    double division = a / b;
+
+    cout << "floor " << a << " / " << b << " = " << floor(division) << endl;
+    cout << "ceil " << a << " / " << b << " = " << ceil(division) << endl;
+    cout << "round " << a << " / " << b << " = " << round(division) << endl;
+
+    return 0;
+}
