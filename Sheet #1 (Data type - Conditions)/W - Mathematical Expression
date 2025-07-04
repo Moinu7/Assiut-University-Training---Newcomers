@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+
+int main() {
+    std::string expression;
+    std::getline(std::cin, expression);
+
+    std::stringstream ss(expression);
+    int a, b, c;
+    char op, eq;
+
+    ss >> a >> op >> b >> eq >> c;
+
+    int result;
+    if (op == '+') {
+        result = a + b;
+    } else if (op == '-') {
+        result = a - b;
+    } else if (op == '*') {
+        result = a * b;
+    }
+
+    if (result == c) {
+        std::cout << "Yes" << std::endl;
+    } else {
+        std::cout << result << std::endl;
+    }
+
+    return 0;
+}
