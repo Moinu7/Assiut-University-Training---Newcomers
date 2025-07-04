@@ -1,0 +1,44 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string expression;
+    std::getline(std::cin, expression);
+
+    int a = 0, b = 0;
+    char op;
+    int i = 0;
+
+    while (i < expression.length() && isdigit(expression[i])) {
+        a = a * 10 + (expression[i] - '0');
+        i++;
+    }
+
+    op = expression[i];
+    i++;
+
+    while (i < expression.length() && isdigit(expression[i])) {
+        b = b * 10 + (expression[i] - '0');
+        i++;
+    }
+
+    int result;
+    switch (op) {
+        case '+':
+            result = a + b;
+            break;
+        case '-':
+            result = a - b;
+            break;
+        case '*':
+            result = a * b;
+            break;
+        case '/':
+            result = a / b;
+            break;
+    }
+
+    std::cout << result << std::endl;
+
+    return 0;
+}
