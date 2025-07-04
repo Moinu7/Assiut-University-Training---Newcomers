@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+int main() {
+    double a, b, c, d;
+    std::cin >> a >> b >> c >> d;
+    double log_ab = b * log(a);
+    double log_cd = d * log(c);
+    if (log_ab > log_cd) {
+        std::cout << "YES" << std::endl;
+    } else {
+        std::cout << "NO" << std::endl;
+    }
+
+    return 0;
+}
