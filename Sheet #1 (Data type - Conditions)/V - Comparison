@@ -1,0 +1,30 @@
+#include <iostream>
+
+int main() {
+    int a, b;
+    char s;
+
+    std::cin >> a >> s >> b;
+
+    if (s == '<') {
+        if (a < b) {
+            std::cout << "Right" << std::endl;
+        } else {
+            std::cout << "Wrong" << std::endl;
+        }
+    } else if (s == '>') {
+        if (a > b) {
+            std::cout << "Right" << std::endl;
+        } else {
+            std::cout << "Wrong" << std::endl;
+        }
+    } else if (s == '=') {
+        if (a == b) {
+            std::cout << "Right" << std::endl;
+        } else {
+            std::cout << "Wrong" << std::endl;
+        }
+    }
+
+    return 0;
+}
